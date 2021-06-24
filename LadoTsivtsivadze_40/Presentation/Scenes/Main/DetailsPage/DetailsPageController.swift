@@ -8,9 +8,19 @@
 import UIKit
 
 class DetailsPageController: UIViewController {
-
+    
+    
+    @IBOutlet weak var imgView: UIImageView!
+    @IBOutlet weak var articleSource: UILabel!
+    @IBOutlet weak var time: UILabel!
+    @IBOutlet weak var tittle: UILabel!
+    @IBOutlet weak var subtitle: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        time.layer.cornerRadius = 20
+        articleSource.layer.cornerRadius = 20
     }
     
     override func viewWillDisappear(_ animated: Bool) {

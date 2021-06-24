@@ -109,6 +109,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Article Source" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y67-d1-SwH">
+                                <rect key="frame" x="40" y="208" width="91.5" height="17"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eyl-BV-u5v">
+                                <rect key="frame" x="171.5" y="208" width="34" height="18"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="nU7-S5-yqM"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -119,11 +133,22 @@
                             <constraint firstItem="I7l-sr-EMu" firstAttribute="top" secondItem="MHc-Mc-hgt" secondAttribute="bottom" constant="20" id="KCC-Is-zVS"/>
                             <constraint firstItem="9s6-pa-GQH" firstAttribute="leading" secondItem="nU7-S5-yqM" secondAttribute="leading" id="TdC-E7-eyn"/>
                             <constraint firstItem="MHc-Mc-hgt" firstAttribute="leading" secondItem="nU7-S5-yqM" secondAttribute="leading" constant="20" id="cSq-PQ-a9b"/>
+                            <constraint firstItem="y67-d1-SwH" firstAttribute="leading" secondItem="nU7-S5-yqM" secondAttribute="leading" constant="40" id="gzJ-f5-49B"/>
+                            <constraint firstItem="Eyl-BV-u5v" firstAttribute="leading" secondItem="y67-d1-SwH" secondAttribute="trailing" constant="40" id="km7-Tn-3yF"/>
+                            <constraint firstItem="y67-d1-SwH" firstAttribute="top" secondItem="EAU-7I-c14" secondAttribute="bottom" constant="104" id="qwW-fs-Etr"/>
+                            <constraint firstItem="Eyl-BV-u5v" firstAttribute="top" secondItem="nU7-S5-yqM" secondAttribute="top" constant="164" id="rsg-lK-hIM"/>
                             <constraint firstItem="I7l-sr-EMu" firstAttribute="leading" secondItem="nU7-S5-yqM" secondAttribute="leading" constant="20" id="sWW-6c-3ZO"/>
                             <constraint firstItem="EAU-7I-c14" firstAttribute="top" secondItem="nU7-S5-yqM" secondAttribute="top" constant="20" id="tU2-fD-dIv"/>
                             <constraint firstItem="EAU-7I-c14" firstAttribute="leading" secondItem="nU7-S5-yqM" secondAttribute="leading" constant="20" id="yqB-eL-ijO"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="articleSource" destination="y67-d1-SwH" id="T4f-La-ez4"/>
+                        <outlet property="imgView" destination="9s6-pa-GQH" id="ols-9c-kue"/>
+                        <outlet property="subtitle" destination="I7l-sr-EMu" id="fkA-Xp-olr"/>
+                        <outlet property="time" destination="Eyl-BV-u5v" id="p5h-CV-9xD"/>
+                        <outlet property="tittle" destination="MHc-Mc-hgt" id="bY2-gJ-7ee"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1p1-gh-WuF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
