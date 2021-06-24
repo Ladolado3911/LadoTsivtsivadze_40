@@ -83,7 +83,7 @@ extension FirstPageController: Table {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        200
+        230
     }
 }
 

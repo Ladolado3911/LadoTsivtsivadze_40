@@ -17,8 +17,14 @@
                 <rect key="frame" x="0.0" y="0.0" width="489" height="170"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="News Section 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Nv-ba-tlD">
+                        <rect key="frame" x="20" y="10" width="159" height="26.5"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="ba1-3B-gFr">
-                        <rect key="frame" x="0.0" y="0.0" width="489" height="170"/>
+                        <rect key="frame" x="0.0" y="46.5" width="489" height="123.5"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="LXR-1R-ykK">
                             <size key="itemSize" width="128" height="128"/>
@@ -30,16 +36,18 @@
                 </subviews>
                 <constraints>
                     <constraint firstItem="ba1-3B-gFr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="1Ib-PD-FZ2"/>
+                    <constraint firstItem="2Nv-ba-tlD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="6Vv-RZ-ZGg"/>
+                    <constraint firstItem="2Nv-ba-tlD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="9mh-GU-RRC"/>
+                    <constraint firstItem="ba1-3B-gFr" firstAttribute="top" secondItem="2Nv-ba-tlD" secondAttribute="bottom" constant="10" id="DQI-r6-OCk"/>
                     <constraint firstAttribute="bottom" secondItem="ba1-3B-gFr" secondAttribute="bottom" id="Eqq-tp-Ls3"/>
                     <constraint firstAttribute="trailing" secondItem="ba1-3B-gFr" secondAttribute="trailing" id="XaU-n1-Igr"/>
-                    <constraint firstItem="ba1-3B-gFr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="zXP-eO-LwG"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="collectView" destination="ba1-3B-gFr" id="zqw-54-qRV"/>
             </connections>
-            <point key="canvasLocation" x="263.04347826086956" y="152.00892857142856"/>
+            <point key="canvasLocation" x="261.59420289855075" y="152.00892857142856"/>
         </tableViewCell>
     </objects>
     <resources>

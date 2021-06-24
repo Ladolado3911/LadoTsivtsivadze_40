@@ -18,7 +18,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="jnB-rZ-95C">
-                        <rect key="frame" x="0.0" y="0.0" width="524" height="276"/>
+                        <rect key="frame" x="0.0" y="47" width="524" height="229"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="8nq-oX-lXj">
                             <size key="itemSize" width="128" height="128"/>
@@ -27,11 +27,20 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                     </collectionView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="News Section 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C0G-ba-bEi">
+                        <rect key="frame" x="10" y="10" width="494" height="27"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
+                    <constraint firstAttribute="trailing" secondItem="C0G-ba-bEi" secondAttribute="trailing" constant="20" id="6u7-1y-dES"/>
+                    <constraint firstItem="C0G-ba-bEi" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Ae1-33-fyV"/>
                     <constraint firstAttribute="bottom" secondItem="jnB-rZ-95C" secondAttribute="bottom" id="MC5-N0-vkh"/>
                     <constraint firstAttribute="trailing" secondItem="jnB-rZ-95C" secondAttribute="trailing" id="ShV-QJ-51A"/>
-                    <constraint firstItem="jnB-rZ-95C" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="aMc-7b-K4s"/>
+                    <constraint firstItem="jnB-rZ-95C" firstAttribute="top" secondItem="C0G-ba-bEi" secondAttribute="bottom" constant="10" id="W2q-UE-JC9"/>
+                    <constraint firstItem="C0G-ba-bEi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="isg-cl-TfU"/>
                     <constraint firstItem="jnB-rZ-95C" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="xDW-2v-nGX"/>
                 </constraints>
             </tableViewCellContentView>
