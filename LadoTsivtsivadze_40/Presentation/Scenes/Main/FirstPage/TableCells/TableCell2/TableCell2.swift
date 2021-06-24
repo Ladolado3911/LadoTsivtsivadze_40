@@ -10,6 +10,7 @@ import UIKit
 class TableCell2: UITableViewCell {
 
     @IBOutlet weak var collectView: UICollectionView!
+    var data: [News] = []
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -33,11 +34,22 @@ class TableCell2: UITableViewCell {
 
 extension TableCell2: Collect {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        5
+        data.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectCell2", for: indexPath) as? CollectCell2
+        let item = data[indexPath.row]
+        let title = item.Title
+        let subtitle = item.ShortDescription
+        let time = item.Time
+        let image = item.BigCoverPhotoUrl
+        
+        cell!.imgView.kf.setImage(with: URL(string: image!))
+        cell!.title.text = title
+        cell!.subtitle.text = subtitle
+        cell!.date.text = time
+        
         return cell!
     }
     

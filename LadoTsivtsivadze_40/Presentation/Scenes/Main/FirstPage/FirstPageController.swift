@@ -71,9 +71,15 @@ extension FirstPageController: Table {
             return cell1!
         case 1:
             let cell2 = tableView.dequeueReusableCell(withIdentifier: "TableCell2") as? TableCell2
+            let smallData = Array(data.shuffled().prefix(5))
+            cell2!.data = smallData
+            cell2!.collectView.reloadData()
             return cell2!
         case 2:
             let cell3 = tableView.dequeueReusableCell(withIdentifier: "TableCell3") as? TableCell3
+            let smallData = Array(data.shuffled().prefix(5))
+            cell3!.data = smallData
+            cell3!.collectView.reloadData()
             return cell3!
         default:
             return UITableViewCell()
