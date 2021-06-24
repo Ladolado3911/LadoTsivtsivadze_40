@@ -23,7 +23,7 @@
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wbH-2e-DCP" secondAttribute="trailing" id="fVj-bh-acU"/>
                             <constraint firstItem="wbH-2e-DCP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="mfk-os-zZn"/>
@@ -31,7 +31,7 @@
                             <constraint firstItem="wbH-2e-DCP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="x3o-Gl-qKP"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Discovery" id="s5V-UV-pQO"/>
+                    <tabBarItem key="tabBarItem" title="Discovery" image="globe" catalog="system" id="s5V-UV-pQO"/>
                     <connections>
                         <outlet property="tblView" destination="wbH-2e-DCP" id="Xw3-qI-uCI"/>
                     </connections>
@@ -40,7 +40,7 @@
             </objects>
             <point key="canvasLocation" x="-1539" y="852"/>
         </scene>
-        <!--Second Page Controller-->
+        <!--News-->
         <scene sceneID="7Zi-FF-mUg">
             <objects>
                 <viewController storyboardIdentifier="SecondPageController" id="hsK-Nd-WjJ" customClass="SecondPageController" customModule="LadoTsivtsivadze_40" customModuleProvider="target" sceneMemberID="viewController">
@@ -48,13 +48,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rPE-u7-6g7">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rPE-u7-6g7">
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="separatorColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2bX-QZ-fGe"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="2bX-QZ-fGe" firstAttribute="trailing" secondItem="rPE-u7-6g7" secondAttribute="trailing" id="5sq-rO-yaN"/>
                             <constraint firstItem="2bX-QZ-fGe" firstAttribute="bottom" secondItem="rPE-u7-6g7" secondAttribute="bottom" id="RM0-Em-Bmr"/>
@@ -62,7 +64,7 @@
                             <constraint firstItem="rPE-u7-6g7" firstAttribute="leading" secondItem="2bX-QZ-fGe" secondAttribute="leading" id="k55-KD-dKa"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="9rG-CS-42T"/>
+                    <navigationItem key="navigationItem" title="News" id="9rG-CS-42T"/>
                     <connections>
                         <outlet property="tblView" destination="rPE-u7-6g7" id="xZB-SI-3pF"/>
                     </connections>
@@ -189,6 +191,7 @@
         <!--Stations-->
         <scene sceneID="bjt-O3-8d1">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3So-uV-ipq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="KXS-oH-QLG" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WQy-pg-YgV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -198,7 +201,6 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Stations" id="8gN-Qt-azc"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3So-uV-ipq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1179.7101449275362" y="851.78571428571422"/>
         </scene>
@@ -261,25 +263,33 @@
         <!--News-->
         <scene sceneID="K4L-zs-EE7">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6q1-hh-MhE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bde-2k-qQe" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="News" id="FoW-KS-XoZ"/>
+                    <tabBarItem key="tabBarItem" title="News" image="newspaper.fill" catalog="system" id="FoW-KS-XoZ"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="kkh-A0-I0D">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
                         <segue destination="hsK-Nd-WjJ" kind="relationship" relationship="rootViewController" id="Beq-p8-SZl"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6q1-hh-MhE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-600" y="851.78571428571422"/>
         </scene>
     </scenes>
     <resources>
         <image name="BackIcon" width="512" height="512"/>
+        <image name="globe" catalog="system" width="128" height="121"/>
+        <image name="newspaper.fill" catalog="system" width="128" height="111"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
