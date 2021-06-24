@@ -8,7 +8,12 @@
 import UIKit
 
 class TableCell: UITableViewCell {
-
+    
+    @IBOutlet weak var imgView: UIImageView!
+    @IBOutlet weak var title: UILabel!
+    @IBOutlet weak var subtitle: UILabel!
+    @IBOutlet weak var date: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -19,5 +24,4 @@ class TableCell: UITableViewCell {
         contentView.frame = contentView.frame.inset(by: UIEdgeInsets(top: 10, left: 5, bottom: 10, right: 5))
         contentView.layer.cornerRadius = 20
     }
-
 }
