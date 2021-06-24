@@ -6,13 +6,14 @@
 //
 
 import UIKit
+import Kingfisher
 
 class TableCell1: UITableViewCell {
     
     @IBOutlet weak var collectView: UICollectionView!
     @IBOutlet weak var pageControl: UIPageControl!
     
-    var collectData: [String] = []
+    var collectData: [String?] = []
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -37,12 +38,16 @@ class TableCell1: UITableViewCell {
 
 extension TableCell1: Collect {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        3
+        collectData.count
         //return collectData.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectCell1", for: indexPath) as? CollectCell1
+        let url = URL(string: collectData[indexPath.row]!)
+        print(collectData[indexPath.row]!)
+        cell!.imgView.kf.setImage(with: url)
+        
         return cell!
     }
     

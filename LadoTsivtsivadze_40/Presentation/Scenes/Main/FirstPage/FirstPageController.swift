@@ -22,6 +22,11 @@ class FirstPageController: UIViewController {
 
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        refresh()
+    }
+    
     func configTableView() {
         let nib1 = UINib(nibName: "TableCell1", bundle: nil)
         let nib2 = UINib(nibName: "TableCell2", bundle: nil)
@@ -60,6 +65,9 @@ extension FirstPageController: Table {
         switch indexPath.row {
         case 0:
             let cell1 = tableView.dequeueReusableCell(withIdentifier: "TableCell1") as? TableCell1
+            let smallData = Array(data.shuffled().prefix(3)).map { $0.BigCoverPhotoUrl }
+            cell1!.collectData = smallData
+            cell1!.collectView.reloadData()
             return cell1!
         case 1:
             let cell2 = tableView.dequeueReusableCell(withIdentifier: "TableCell2") as? TableCell2
