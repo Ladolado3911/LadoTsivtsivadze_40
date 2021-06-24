@@ -58,16 +58,64 @@
 		3F70D01426847823006E94BA /* LadoTsivtsivadze_40 */ = {
 			isa = PBXGroup;
 			children = (
-				3F70D01526847823006E94BA /* AppDelegate.swift */,
-				3F70D01726847823006E94BA /* SceneDelegate.swift */,
-				3F70D01926847823006E94BA /* ViewController.swift */,
-				3F70D01B26847824006E94BA /* Main.storyboard */,
-				3F70D02126847826006E94BA /* Assets.xcassets */,
-				3F70D02326847826006E94BA /* LaunchScreen.storyboard */,
-				3F70D02626847826006E94BA /* Info.plist */,
+				3F70D03226847847006E94BA /* Supporting Files */,
+				3F70D02E26847833006E94BA /* Presentation */,
+				3F70D02D2684782C006E94BA /* App */,
+				3F70D03326847853006E94BA /* Resources */,
 				3F70D01E26847824006E94BA /* LadoTsivtsivadze_40.xcdatamodeld */,
 			);
 			path = LadoTsivtsivadze_40;
+			sourceTree = "<group>";
+		};
+		3F70D02D2684782C006E94BA /* App */ = {
+			isa = PBXGroup;
+			children = (
+				3F70D01526847823006E94BA /* AppDelegate.swift */,
+				3F70D01726847823006E94BA /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		3F70D02E26847833006E94BA /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				3F70D03026847838006E94BA /* Scenes */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		3F70D03026847838006E94BA /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				3F70D0312684783F006E94BA /* Main */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		3F70D0312684783F006E94BA /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				3F70D01926847823006E94BA /* ViewController.swift */,
+				3F70D01B26847824006E94BA /* Main.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		3F70D03226847847006E94BA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3F70D02326847826006E94BA /* LaunchScreen.storyboard */,
+				3F70D02626847826006E94BA /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3F70D03326847853006E94BA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3F70D02126847826006E94BA /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
