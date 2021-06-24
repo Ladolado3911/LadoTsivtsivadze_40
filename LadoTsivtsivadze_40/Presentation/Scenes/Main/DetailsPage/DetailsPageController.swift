@@ -15,6 +15,7 @@ class DetailsPageController: UIViewController {
     @IBOutlet weak var time: UILabel!
     @IBOutlet weak var tittle: UILabel!
     @IBOutlet weak var subtitle: UILabel!
+    @IBOutlet weak var contentView: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()

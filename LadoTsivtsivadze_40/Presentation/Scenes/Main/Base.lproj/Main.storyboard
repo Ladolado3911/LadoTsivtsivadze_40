@@ -173,6 +173,7 @@
                     </view>
                     <connections>
                         <outlet property="articleSource" destination="y67-d1-SwH" id="T4f-La-ez4"/>
+                        <outlet property="contentView" destination="yHW-xF-ukN" id="jDo-1g-dQD"/>
                         <outlet property="imgView" destination="9s6-pa-GQH" id="ols-9c-kue"/>
                         <outlet property="subtitle" destination="I7l-sr-EMu" id="fkA-Xp-olr"/>
                         <outlet property="time" destination="Eyl-BV-u5v" id="p5h-CV-9xD"/>

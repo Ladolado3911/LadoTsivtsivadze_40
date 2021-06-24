@@ -33,6 +33,8 @@
 		3F70D0882684C97E006E94BA /* DetailsPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F70D0872684C97E006E94BA /* DetailsPageController.swift */; };
 		3F70D08C2684CA06006E94BA /* ControllerHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F70D08B2684CA06006E94BA /* ControllerHelpers.swift */; };
 		3F70D08F2684CA5C006E94BA /* IDs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F70D08E2684CA5C006E94BA /* IDs.swift */; };
+		3F70D0932684DE82006E94BA /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F70D0922684DE82006E94BA /* NetworkManager.swift */; };
+		3F70D0972684DEA1006E94BA /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F70D0962684DEA1006E94BA /* Models.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +66,8 @@
 		3F70D0872684C97E006E94BA /* DetailsPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsPageController.swift; sourceTree = "<group>"; };
 		3F70D08B2684CA06006E94BA /* ControllerHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerHelpers.swift; sourceTree = "<group>"; };
 		3F70D08E2684CA5C006E94BA /* IDs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDs.swift; sourceTree = "<group>"; };
+		3F70D0922684DE82006E94BA /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		3F70D0962684DEA1006E94BA /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,8 @@
 		3F70D01426847823006E94BA /* LadoTsivtsivadze_40 */ = {
 			isa = PBXGroup;
 			children = (
+				3F70D0952684DE97006E94BA /* Domain */,
+				3F70D0912684DE6F006E94BA /* Managers */,
 				3F70D02626847826006E94BA /* Info.plist */,
 				3F70D03226847847006E94BA /* Supporting Files */,
 				3F70D02E26847833006E94BA /* Presentation */,
@@ -263,6 +269,22 @@
 			path = DetailsPage;
 			sourceTree = "<group>";
 		};
+		3F70D0912684DE6F006E94BA /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				3F70D0922684DE82006E94BA /* NetworkManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		3F70D0952684DE97006E94BA /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				3F70D0962684DEA1006E94BA /* Models.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -350,10 +372,12 @@
 				3F70D03726847C4C006E94BA /* Typealiases.swift in Sources */,
 				3F70D02026847824006E94BA /* LadoTsivtsivadze_40.xcdatamodeld in Sources */,
 				3F70D060268481EA006E94BA /* CollectCell1.swift in Sources */,
+				3F70D0932684DE82006E94BA /* NetworkManager.swift in Sources */,
 				3F70D01826847823006E94BA /* SceneDelegate.swift in Sources */,
 				3F70D06526848201006E94BA /* CollectCell2.swift in Sources */,
 				3F70D04E26847D35006E94BA /* TableCell3.swift in Sources */,
 				3F70D0882684C97E006E94BA /* DetailsPageController.swift in Sources */,
+				3F70D0972684DEA1006E94BA /* Models.swift in Sources */,
 				3F70D06A26848215006E94BA /* CollectCell3.swift in Sources */,
 				3F70D04826847D23006E94BA /* TableCell2.swift in Sources */,
 			);
