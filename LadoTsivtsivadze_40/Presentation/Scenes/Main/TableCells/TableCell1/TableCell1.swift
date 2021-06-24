@@ -33,9 +33,6 @@ class TableCell1: UITableViewCell {
         let nib = UINib(nibName: "CollectCell1", bundle: nil)
         collectView.register(nib, forCellWithReuseIdentifier: "CollectCell1")
     }
-    
-    
-    
 }
 
 extension TableCell1: Collect {

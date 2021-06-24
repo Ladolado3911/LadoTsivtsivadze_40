@@ -8,10 +8,19 @@
 import UIKit
 
 class CollectCell2: UICollectionViewCell {
-
+    
+    @IBOutlet weak var imgView: UIImageView!
+    @IBOutlet weak var title: UILabel!
+    @IBOutlet weak var subtitle: UILabel!
+    @IBOutlet weak var date: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
     }
 
 }
