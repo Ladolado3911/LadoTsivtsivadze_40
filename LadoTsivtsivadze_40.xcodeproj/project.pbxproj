@@ -30,6 +30,9 @@
 		3F70D07D2684C47D006E94BA /* SecondPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F70D07C2684C47D006E94BA /* SecondPageController.swift */; };
 		3F70D0822684C4C6006E94BA /* TableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F70D0802684C4C6006E94BA /* TableCell.swift */; };
 		3F70D0832684C4C6006E94BA /* TableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F70D0812684C4C6006E94BA /* TableCell.xib */; };
+		3F70D0882684C97E006E94BA /* DetailsPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F70D0872684C97E006E94BA /* DetailsPageController.swift */; };
+		3F70D08C2684CA06006E94BA /* ControllerHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F70D08B2684CA06006E94BA /* ControllerHelpers.swift */; };
+		3F70D08F2684CA5C006E94BA /* IDs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F70D08E2684CA5C006E94BA /* IDs.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +61,9 @@
 		3F70D07C2684C47D006E94BA /* SecondPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondPageController.swift; sourceTree = "<group>"; };
 		3F70D0802684C4C6006E94BA /* TableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCell.swift; sourceTree = "<group>"; };
 		3F70D0812684C4C6006E94BA /* TableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableCell.xib; sourceTree = "<group>"; };
+		3F70D0872684C97E006E94BA /* DetailsPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsPageController.swift; sourceTree = "<group>"; };
+		3F70D08B2684CA06006E94BA /* ControllerHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerHelpers.swift; sourceTree = "<group>"; };
+		3F70D08E2684CA5C006E94BA /* IDs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDs.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +134,7 @@
 		3F70D0312684783F006E94BA /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				3F70D0852684C908006E94BA /* DetailsPage */,
 				3F70D07B2684C466006E94BA /* SecondPage */,
 				3F70D07A2684C45A006E94BA /* FirstPage */,
 				3F70D01B26847824006E94BA /* Main.storyboard */,
@@ -140,6 +147,8 @@
 			children = (
 				3F70D02326847826006E94BA /* LaunchScreen.storyboard */,
 				3F70D03626847C4C006E94BA /* Typealiases.swift */,
+				3F70D08B2684CA06006E94BA /* ControllerHelpers.swift */,
+				3F70D08E2684CA5C006E94BA /* IDs.swift */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -246,6 +255,14 @@
 			path = TableCell;
 			sourceTree = "<group>";
 		};
+		3F70D0852684C908006E94BA /* DetailsPage */ = {
+			isa = PBXGroup;
+			children = (
+				3F70D0872684C97E006E94BA /* DetailsPageController.swift */,
+			);
+			path = DetailsPage;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -327,13 +344,16 @@
 				3F70D0702684895E006E94BA /* TableCell1.swift in Sources */,
 				3F70D07D2684C47D006E94BA /* SecondPageController.swift in Sources */,
 				3F70D0822684C4C6006E94BA /* TableCell.swift in Sources */,
+				3F70D08F2684CA5C006E94BA /* IDs.swift in Sources */,
 				3F70D01626847823006E94BA /* AppDelegate.swift in Sources */,
+				3F70D08C2684CA06006E94BA /* ControllerHelpers.swift in Sources */,
 				3F70D03726847C4C006E94BA /* Typealiases.swift in Sources */,
 				3F70D02026847824006E94BA /* LadoTsivtsivadze_40.xcdatamodeld in Sources */,
 				3F70D060268481EA006E94BA /* CollectCell1.swift in Sources */,
 				3F70D01826847823006E94BA /* SceneDelegate.swift in Sources */,
 				3F70D06526848201006E94BA /* CollectCell2.swift in Sources */,
 				3F70D04E26847D35006E94BA /* TableCell3.swift in Sources */,
+				3F70D0882684C97E006E94BA /* DetailsPageController.swift in Sources */,
 				3F70D06A26848215006E94BA /* CollectCell3.swift in Sources */,
 				3F70D04826847D23006E94BA /* TableCell2.swift in Sources */,
 			);
