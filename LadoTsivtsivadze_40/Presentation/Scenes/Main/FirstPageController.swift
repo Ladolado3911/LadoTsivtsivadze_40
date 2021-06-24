@@ -12,6 +12,10 @@ class FirstPageController: UIViewController {
     
     @IBOutlet weak var tblView: UITableView!
     
+    var tableCell1Data: [String] = []
+    var tableCell2Data: [String] = []
+    var tableCell3Data: [String] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -31,15 +35,25 @@ class FirstPageController: UIViewController {
     }
 }
 
-
-
 extension FirstPageController: Table {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        0
+        3
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        switch indexPath.row {
+        case 0:
+            let cell1 = tableView.dequeueReusableCell(withIdentifier: "TableCell1") as? TableCell1
+            return cell1!
+        case 1:
+            let cell2 = tableView.dequeueReusableCell(withIdentifier: "TableCell2") as? TableCell2
+            return cell2!
+        case 2:
+            let cell3 = tableView.dequeueReusableCell(withIdentifier: "TableCell3") as? TableCell3
+            return cell3!
+        default:
+            return UITableViewCell()
+        }
     }
 }
 

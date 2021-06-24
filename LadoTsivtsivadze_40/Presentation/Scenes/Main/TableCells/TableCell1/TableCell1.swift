@@ -1,5 +1,5 @@
 //
-//  TableCell1TableViewCell.swift
+//  TableCell1.swift
 //  LadoTsivtsivadze_40
 //
 //  Created by Ladolado3911 on 6/24/21.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TableCell1TableViewCell: UITableViewCell {
+class TableCell1: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -19,5 +19,4 @@ class TableCell1TableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    
 }
