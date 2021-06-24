@@ -17,11 +17,25 @@ class DetailsPageController: UIViewController {
     @IBOutlet weak var subtitle: UILabel!
     @IBOutlet weak var contentView: UITextView!
     
+    var item: News?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         time.layer.cornerRadius = 20
         articleSource.layer.cornerRadius = 20
+        
+        guard let item = item else { return }
+        setData(itm: item)
+    }
+    
+    func setData(itm item: News) {
+        articleSource.text = item.ArticleSource
+        tittle.text = item.Title
+        subtitle.text = item.ShortDescription
+        time.text = item.Time
+        imgView.kf.setImage(with: URL(string: item.BigCoverPhotoUrl!))
+        contentView.text = item.Content
     }
     
     override func viewWillDisappear(_ animated: Bool) {

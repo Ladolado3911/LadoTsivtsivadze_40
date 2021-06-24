@@ -19,14 +19,10 @@ class FirstPageController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configTableView()
+        refresh()
 
     }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        refresh()
-    }
-    
+
     func configTableView() {
         let nib1 = UINib(nibName: "TableCell1", bundle: nil)
         let nib2 = UINib(nibName: "TableCell2", bundle: nil)

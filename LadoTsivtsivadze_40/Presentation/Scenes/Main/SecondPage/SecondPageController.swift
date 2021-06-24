@@ -23,13 +23,9 @@ class SecondPageController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configTableView()
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
         refresh()
     }
-    
+
     func configTableView() {
         tblView.dataSource = self
         tblView.delegate = self
@@ -83,6 +79,9 @@ extension SecondPageController: Table {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         // go to details page
         guard let detailsPage = detailsPage else { return }
+        let item = data[indexPath.row]
+        detailsPage.item = item
+        
         present(detailsPage, animated: true, completion: nil)
 //        pushController(from: self, to: detailsPage, method: .withBackItem)
     }
