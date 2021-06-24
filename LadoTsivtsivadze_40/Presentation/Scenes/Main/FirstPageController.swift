@@ -18,13 +18,11 @@ class FirstPageController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        configTableView()
+
     }
     
     func configTableView() {
-        tblView.dataSource = self
-        tblView.delegate = self
-        
         let nib1 = UINib(nibName: "TableCell1", bundle: nil)
         let nib2 = UINib(nibName: "TableCell2", bundle: nil)
         let nib3 = UINib(nibName: "TableCell3", bundle: nil)
@@ -32,6 +30,9 @@ class FirstPageController: UIViewController {
         tblView.register(nib1, forCellReuseIdentifier: "TableCell1")
         tblView.register(nib2, forCellReuseIdentifier: "TableCell2")
         tblView.register(nib3, forCellReuseIdentifier: "TableCell3")
+        
+        tblView.dataSource = self
+        tblView.delegate = self
     }
 }
 
@@ -54,6 +55,10 @@ extension FirstPageController: Table {
         default:
             return UITableViewCell()
         }
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        200
     }
 }
 

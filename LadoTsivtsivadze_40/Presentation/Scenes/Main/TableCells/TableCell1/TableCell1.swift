@@ -13,16 +13,9 @@ class TableCell1: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
     }
+
     
-    override func layoutSubviews() {
-        super.layoutSubviews()
-        
-        
-    }
     
-    func configCollectView() {
-        
-    }
 }
 
 extension TableCell1: Collect {

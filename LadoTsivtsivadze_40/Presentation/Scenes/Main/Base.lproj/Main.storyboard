@@ -22,7 +22,7 @@
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wbH-2e-DCP" secondAttribute="trailing" id="fVj-bh-acU"/>
                             <constraint firstItem="wbH-2e-DCP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="mfk-os-zZn"/>
