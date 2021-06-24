@@ -8,7 +8,10 @@
 import UIKit
 
 class CollectCell3: UICollectionViewCell {
-
+    
+    @IBOutlet weak var imgView: UIImageView!
+    @IBOutlet weak var title: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

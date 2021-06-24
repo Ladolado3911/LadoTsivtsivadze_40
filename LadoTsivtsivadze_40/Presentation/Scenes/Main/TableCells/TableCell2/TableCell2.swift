@@ -24,7 +24,6 @@ class TableCell2: UITableViewCell {
     func configCollectView() {
         collectView.dataSource = self
         collectView.delegate = self
-        collectView.isPagingEnabled = true
 
         let nib = UINib(nibName: "CollectCell2", bundle: nil)
         collectView.register(nib, forCellWithReuseIdentifier: "CollectCell2")
@@ -43,6 +42,6 @@ extension TableCell2: Collect {
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        CGSize(width: 140, height: 190)
+        CGSize(width: 170, height: 190)
     }
 }
