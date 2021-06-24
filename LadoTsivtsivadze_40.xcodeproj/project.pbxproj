@@ -27,6 +27,9 @@
 		3F70D06B26848215006E94BA /* CollectCell3.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F70D06926848215006E94BA /* CollectCell3.xib */; };
 		3F70D0702684895E006E94BA /* TableCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F70D06E2684895E006E94BA /* TableCell1.swift */; };
 		3F70D0712684895E006E94BA /* TableCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F70D06F2684895E006E94BA /* TableCell1.xib */; };
+		3F70D07D2684C47D006E94BA /* SecondPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F70D07C2684C47D006E94BA /* SecondPageController.swift */; };
+		3F70D0822684C4C6006E94BA /* TableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F70D0802684C4C6006E94BA /* TableCell.swift */; };
+		3F70D0832684C4C6006E94BA /* TableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F70D0812684C4C6006E94BA /* TableCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +55,9 @@
 		3F70D06926848215006E94BA /* CollectCell3.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectCell3.xib; sourceTree = "<group>"; };
 		3F70D06E2684895E006E94BA /* TableCell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCell1.swift; sourceTree = "<group>"; };
 		3F70D06F2684895E006E94BA /* TableCell1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableCell1.xib; sourceTree = "<group>"; };
+		3F70D07C2684C47D006E94BA /* SecondPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondPageController.swift; sourceTree = "<group>"; };
+		3F70D0802684C4C6006E94BA /* TableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCell.swift; sourceTree = "<group>"; };
+		3F70D0812684C4C6006E94BA /* TableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,8 +128,8 @@
 		3F70D0312684783F006E94BA /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				3F70D03926847CB2006E94BA /* TableCells */,
-				3F70D01926847823006E94BA /* FirstPageController.swift */,
+				3F70D07B2684C466006E94BA /* SecondPage */,
+				3F70D07A2684C45A006E94BA /* FirstPage */,
 				3F70D01B26847824006E94BA /* Main.storyboard */,
 			);
 			path = Main;
@@ -213,6 +219,33 @@
 			path = CollectCells;
 			sourceTree = "<group>";
 		};
+		3F70D07A2684C45A006E94BA /* FirstPage */ = {
+			isa = PBXGroup;
+			children = (
+				3F70D03926847CB2006E94BA /* TableCells */,
+				3F70D01926847823006E94BA /* FirstPageController.swift */,
+			);
+			path = FirstPage;
+			sourceTree = "<group>";
+		};
+		3F70D07B2684C466006E94BA /* SecondPage */ = {
+			isa = PBXGroup;
+			children = (
+				3F70D07F2684C48B006E94BA /* TableCell */,
+				3F70D07C2684C47D006E94BA /* SecondPageController.swift */,
+			);
+			path = SecondPage;
+			sourceTree = "<group>";
+		};
+		3F70D07F2684C48B006E94BA /* TableCell */ = {
+			isa = PBXGroup;
+			children = (
+				3F70D0802684C4C6006E94BA /* TableCell.swift */,
+				3F70D0812684C4C6006E94BA /* TableCell.xib */,
+			);
+			path = TableCell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -274,6 +307,7 @@
 				3F70D04926847D23006E94BA /* TableCell2.xib in Resources */,
 				3F70D04F26847D35006E94BA /* TableCell3.xib in Resources */,
 				3F70D02526847826006E94BA /* LaunchScreen.storyboard in Resources */,
+				3F70D0832684C4C6006E94BA /* TableCell.xib in Resources */,
 				3F70D0712684895E006E94BA /* TableCell1.xib in Resources */,
 				3F70D02226847826006E94BA /* Assets.xcassets in Resources */,
 				3F70D01D26847824006E94BA /* Main.storyboard in Resources */,
@@ -291,6 +325,8 @@
 			files = (
 				3F70D01A26847824006E94BA /* FirstPageController.swift in Sources */,
 				3F70D0702684895E006E94BA /* TableCell1.swift in Sources */,
+				3F70D07D2684C47D006E94BA /* SecondPageController.swift in Sources */,
+				3F70D0822684C4C6006E94BA /* TableCell.swift in Sources */,
 				3F70D01626847823006E94BA /* AppDelegate.swift in Sources */,
 				3F70D03726847C4C006E94BA /* Typealiases.swift in Sources */,
 				3F70D02026847824006E94BA /* LadoTsivtsivadze_40.xcdatamodeld in Sources */,

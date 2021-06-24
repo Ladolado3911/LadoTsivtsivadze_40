@@ -43,14 +43,29 @@
         <!--News-->
         <scene sceneID="7Zi-FF-mUg">
             <objects>
-                <viewController id="hsK-Nd-WjJ" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SecondPageController" id="hsK-Nd-WjJ" customClass="SecondPageController" customModule="LadoTsivtsivadze_40" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="djr-hl-O8r">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rPE-u7-6g7">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="2bX-QZ-fGe"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2bX-QZ-fGe" firstAttribute="trailing" secondItem="rPE-u7-6g7" secondAttribute="trailing" id="5sq-rO-yaN"/>
+                            <constraint firstItem="2bX-QZ-fGe" firstAttribute="bottom" secondItem="rPE-u7-6g7" secondAttribute="bottom" id="RM0-Em-Bmr"/>
+                            <constraint firstItem="rPE-u7-6g7" firstAttribute="top" secondItem="2bX-QZ-fGe" secondAttribute="top" id="a2M-5i-Lcm"/>
+                            <constraint firstItem="rPE-u7-6g7" firstAttribute="leading" secondItem="2bX-QZ-fGe" secondAttribute="leading" id="k55-KD-dKa"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="News" id="FoW-KS-XoZ"/>
+                    <connections>
+                        <outlet property="tblView" destination="rPE-u7-6g7" id="xZB-SI-3pF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hZh-3y-0EZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
