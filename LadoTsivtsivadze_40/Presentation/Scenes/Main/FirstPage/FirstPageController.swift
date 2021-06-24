@@ -12,9 +12,9 @@ class FirstPageController: UIViewController {
     
     @IBOutlet weak var tblView: UITableView!
     
-    var tableCell1Data: [String] = []
-    var tableCell2Data: [String] = []
-    var tableCell3Data: [String] = []
+    var data: [News] = []
+    
+    private var networkManager: NetworkManager = NetworkManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,6 +33,21 @@ class FirstPageController: UIViewController {
         
         tblView.dataSource = self
         tblView.delegate = self
+    }
+    
+    func refresh() {
+        networkManager.fetchNews { [weak self] (result) in
+            guard let self = self else { return }
+            switch result {
+            case .success(let response):
+                DispatchQueue.main.async {
+                    self.data = response.List
+                    self.tblView.reloadData()
+                }
+            case .failure(let error):
+                print(error)
+            }
+        }
     }
 }
 
